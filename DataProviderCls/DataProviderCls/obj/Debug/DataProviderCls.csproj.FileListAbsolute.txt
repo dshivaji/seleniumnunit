@@ -1,0 +1,7 @@
+c:\users\shivaji\documents\visual studio 2012\Projects\DataProviderCls\DataProviderCls\obj\Debug\DataProviderCls.csprojResolveAssemblyReference.cache
+c:\users\shivaji\documents\visual studio 2012\Projects\DataProviderCls\DataProviderCls\obj\Debug\DataProviderCls.csproj.ResolveComReference.cache
+c:\users\shivaji\documents\visual studio 2012\Projects\DataProviderCls\DataProviderCls\bin\Debug\DataProviderCls.dll
+c:\users\shivaji\documents\visual studio 2012\Projects\DataProviderCls\DataProviderCls\bin\Debug\DataProviderCls.pdb
+c:\users\shivaji\documents\visual studio 2012\Projects\DataProviderCls\DataProviderCls\bin\Debug\nunit.framework.dll
+c:\users\shivaji\documents\visual studio 2012\Projects\DataProviderCls\DataProviderCls\obj\Debug\DataProviderCls.dll
+c:\users\shivaji\documents\visual studio 2012\Projects\DataProviderCls\DataProviderCls\obj\Debug\DataProviderCls.pdb
