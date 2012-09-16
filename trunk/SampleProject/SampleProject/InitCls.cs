@@ -19,13 +19,6 @@ namespace SampleProject
 {
     public class InitCls : ExcelCls
     {
-        
-        //private StringBuilder verificationErrors;
-        //public string baseURL;
-
-
-
-
         public static IWebDriver getdriver
         {
             get;
@@ -36,7 +29,6 @@ namespace SampleProject
         {
             get;
             set;
-
         }
             
         ArrayList list = new ArrayList();
