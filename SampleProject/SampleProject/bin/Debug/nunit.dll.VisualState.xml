@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="true">
+  <TopNode>[0-1004]C:\Users\shivaji\Documents\Visual Studio 2012\Projects\nunit\nunit\bin\Debug\nunit.dll</TopNode>
+  <SelectedNode>[0-1006]SeleniumTests</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1004]C:\Users\shivaji\Documents\Visual Studio 2012\Projects\nunit\nunit\bin\Debug\nunit.dll" Expanded="true" />
+    <Node UniqueName="[0-1005]SampleProject" Expanded="true" />
+    <Node UniqueName="[0-1007]SampleProject.modules" Expanded="true" />
+    <Node UniqueName="[0-1006]SeleniumTests" Expanded="true" Checked="true" />
+    <Node UniqueName="[0-1001]SeleniumTests.BuffetCls" Expanded="true" />
+  </Nodes>
+</VisualState>
