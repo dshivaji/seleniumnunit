@@ -10,11 +10,33 @@ using System.Reflection;
 using Newtonsoft.Json;
 using System.IO;
 using System.Collections;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Firefox;
+using System.Threading;
 namespace SampleProject
+
+
 {
     public class InitCls : ExcelCls
     {
+        
+        //private StringBuilder verificationErrors;
+        //public string baseURL;
 
+
+
+
+        public static IWebDriver getdriver
+        {
+
+            get;
+
+            set;
+
+        }
+
+        
+            
         ArrayList list = new ArrayList();
 
 
@@ -22,10 +44,10 @@ namespace SampleProject
         
         public IEnumerable TestData()
         {
-            //return ;
+            
             Dictionary<object, object> tempflow = new Dictionary<object, object>();
             HashSet<string> hs = new HashSet<string>();
-            Console.WriteLine("Before test  method");
+            
             //before test activities
             tempflow = openExcel(@"C:\excel\TestSource.xlsx");
             string temp;
