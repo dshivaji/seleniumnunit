@@ -5,3 +5,10 @@ c:\users\shivaji\documents\visual studio 2012\Projects\DataProviderCls\DataProvi
 c:\users\shivaji\documents\visual studio 2012\Projects\DataProviderCls\DataProviderCls\bin\Debug\nunit.framework.dll
 c:\users\shivaji\documents\visual studio 2012\Projects\DataProviderCls\DataProviderCls\obj\Debug\DataProviderCls.dll
 c:\users\shivaji\documents\visual studio 2012\Projects\DataProviderCls\DataProviderCls\obj\Debug\DataProviderCls.pdb
+A:\VselUnitFramework\Dev\trunk\DataProviderCls\DataProviderCls\bin\Debug\DataProviderCls.dll
+A:\VselUnitFramework\Dev\trunk\DataProviderCls\DataProviderCls\bin\Debug\DataProviderCls.pdb
+A:\VselUnitFramework\Dev\trunk\DataProviderCls\DataProviderCls\bin\Debug\nunit.framework.dll
+A:\VselUnitFramework\Dev\trunk\DataProviderCls\DataProviderCls\obj\Debug\DataProviderCls.csprojResolveAssemblyReference.cache
+A:\VselUnitFramework\Dev\trunk\DataProviderCls\DataProviderCls\obj\Debug\DataProviderCls.csproj.ResolveComReference.cache
+A:\VselUnitFramework\Dev\trunk\DataProviderCls\DataProviderCls\obj\Debug\DataProviderCls.dll
+A:\VselUnitFramework\Dev\trunk\DataProviderCls\DataProviderCls\obj\Debug\DataProviderCls.pdb

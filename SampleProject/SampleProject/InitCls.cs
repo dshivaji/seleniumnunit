@@ -28,14 +28,16 @@ namespace SampleProject
 
         public static IWebDriver getdriver
         {
-
             get;
+            set;
+        }
 
+        public static Dictionary<object, object> getexceldata
+        {
+            get;
             set;
 
         }
-
-        
             
         ArrayList list = new ArrayList();
 
@@ -47,9 +49,20 @@ namespace SampleProject
             
             Dictionary<object, object> tempflow = new Dictionary<object, object>();
             HashSet<string> hs = new HashSet<string>();
+            getexceldata = tempflow = openExcel(@"C:\excel\TestSource.xlsx");
             
             //before test activities
-            tempflow = openExcel(@"C:\excel\TestSource.xlsx");
+            //Thread thread = new Thread(delegate()
+            //{
+            //    getexceldata = tempflow = openExcel(@"C:\excel\TestSource.xlsx");
+            //});
+
+            //thread.Start();
+
+            //while (!thread.IsAlive) ;
+
+            //thread.Join();
+
             string temp;
             var enumerator = tempflow.Keys.GetEnumerator();
 
