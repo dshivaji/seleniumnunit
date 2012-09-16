@@ -23,10 +23,8 @@ C:\Users\shivaji\Documents\Visual Studio 2012\Projects\nunit\nunit\bin\Debug\Sam
 C:\Users\shivaji\Documents\Visual Studio 2012\Projects\nunit\nunit\bin\Debug\SampleProject.pdb
 C:\Users\shivaji\Documents\Visual Studio 2012\Projects\nunit\nunit\obj\Debug\SampleProject.dll
 C:\Users\shivaji\Documents\Visual Studio 2012\Projects\nunit\nunit\obj\Debug\SampleProject.pdb
-A:\VselUnitFramework\Dev\trunk\SampleProject\SampleProject\obj\Debug\SampleProject.csprojResolveAssemblyReference.cache
 A:\VselUnitFramework\Dev\trunk\SampleProject\SampleProject\obj\Debug\SampleProject.Properties.Resources.resources
 A:\VselUnitFramework\Dev\trunk\SampleProject\SampleProject\obj\Debug\SampleProject.csproj.GenerateResource.Cache
-A:\VselUnitFramework\Dev\trunk\SampleProject\SampleProject\obj\Debug\SampleProject.dll
 A:\VselUnitFramework\Dev\trunk\SampleProject\SampleProject\bin\Debug\SampleProject.dll
 A:\VselUnitFramework\Dev\trunk\SampleProject\SampleProject\bin\Debug\SampleProject.pdb
 A:\VselUnitFramework\Dev\trunk\SampleProject\SampleProject\bin\Debug\DataProviderCls.dll
@@ -47,4 +45,5 @@ A:\VselUnitFramework\Dev\trunk\SampleProject\SampleProject\bin\Debug\WebDriver.p
 A:\VselUnitFramework\Dev\trunk\SampleProject\SampleProject\bin\Debug\WebDriver.xml
 A:\VselUnitFramework\Dev\trunk\SampleProject\SampleProject\bin\Debug\WebDriver.Support.pdb
 A:\VselUnitFramework\Dev\trunk\SampleProject\SampleProject\bin\Debug\WebDriver.Support.xml
+A:\VselUnitFramework\Dev\trunk\SampleProject\SampleProject\obj\Debug\SampleProject.dll
 A:\VselUnitFramework\Dev\trunk\SampleProject\SampleProject\obj\Debug\SampleProject.pdb

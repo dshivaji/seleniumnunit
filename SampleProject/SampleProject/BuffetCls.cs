@@ -9,7 +9,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
-
+using OpenQA.Selenium.Firefox;
+using System.Threading;
 
 
 namespace SeleniumTests
@@ -17,31 +18,47 @@ namespace SeleniumTests
     [TestFixture]
     public class BuffetCls : InitCls
     {
+        
+
+        
+                
         Dictionary<object, object> flow = null;
+
         //set up method
         [TestFixtureSetUp]
         public void SetupTest()
-        {
+        {  
             Console.WriteLine("set up at start");
             flow = openExcel(@"C:\excel\TestSource.xlsx");
         }
+
+        
 
         //tear down method
         [TestFixtureTearDown]
         public void TeardownTest()
         {
             Console.WriteLine("end up test method");
+            
             //end of test activities
         
         }
 
         //before every method
         [SetUp]
-        public void  test2()
+        public void  TestSetUp()
         {
-            Console.WriteLine("before test");
+            getdriver = new FirefoxDriver();
+            getdriver.Navigate().GoToUrl("http://www.google.co.in/");
+            
+            
         }
 
+        [TearDown]
+        public void TestTearDown()
+        { 
+           getdriver.Close();
+        }
 
         //main test method to drive entire automation activities
 

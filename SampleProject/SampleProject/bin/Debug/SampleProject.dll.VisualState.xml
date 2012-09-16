@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="true">
-  <TopNode>[0-1004]A:\VselUnitFramework\Dev\trunk\SampleProject\SampleProject\bin\Debug\SampleProject.dll</TopNode>
-  <SelectedNode>[0-1004]A:\VselUnitFramework\Dev\trunk\SampleProject\SampleProject\bin\Debug\SampleProject.dll</SelectedNode>
+  <TopNode>[0-1003]A:\VselUnitFramework\Dev\trunk\SampleProject\SampleProject\bin\Debug\SampleProject.dll</TopNode>
+  <SelectedNode>[0-1000]SeleniumTests.BuffetCls</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
-    <Node UniqueName="[0-1004]A:\VselUnitFramework\Dev\trunk\SampleProject\SampleProject\bin\Debug\SampleProject.dll" Expanded="true" />
-    <Node UniqueName="[0-1005]SeleniumTests" Expanded="true" />
+    <Node UniqueName="[0-1003]A:\VselUnitFramework\Dev\trunk\SampleProject\SampleProject\bin\Debug\SampleProject.dll" Expanded="true" />
+    <Node UniqueName="[0-1004]SeleniumTests" Expanded="true" />
     <Node UniqueName="[0-1000]SeleniumTests.BuffetCls" Expanded="true" />
     <Node UniqueName="[0-1001]SeleniumTests.BuffetCls.BuffetTable" Expanded="true" />
   </Nodes>

@@ -1,5 +1,7 @@
 {
                           'testmethod': ['SampleProject.modules', 'samplemodule','string','int' ],
-						  'testmethod2': ['SampleProject.modules', 'samplemodule','int','int' ]
+						  'testmethod2': ['SampleProject.modules', 'samplemodule','int','int' ],
+						  'Loginmethod': ['SampleProject.modules', 'login','int','int' ]
+						  
                           
 }
