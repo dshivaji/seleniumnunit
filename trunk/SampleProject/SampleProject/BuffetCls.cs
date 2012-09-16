@@ -29,7 +29,9 @@ namespace SeleniumTests
         public void SetupTest()
         {  
             Console.WriteLine("set up at start");
-            flow = openExcel(@"C:\excel\TestSource.xlsx");
+            flow = getexceldata;
+
+            
         }
 
         

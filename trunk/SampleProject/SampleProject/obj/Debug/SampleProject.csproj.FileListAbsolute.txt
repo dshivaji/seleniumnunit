@@ -47,3 +47,4 @@ A:\VselUnitFramework\Dev\trunk\SampleProject\SampleProject\bin\Debug\WebDriver.S
 A:\VselUnitFramework\Dev\trunk\SampleProject\SampleProject\bin\Debug\WebDriver.Support.xml
 A:\VselUnitFramework\Dev\trunk\SampleProject\SampleProject\obj\Debug\SampleProject.dll
 A:\VselUnitFramework\Dev\trunk\SampleProject\SampleProject\obj\Debug\SampleProject.pdb
+A:\VselUnitFramework\Dev\trunk\SampleProject\SampleProject\obj\Debug\SampleProject.csprojResolveAssemblyReference.cache
