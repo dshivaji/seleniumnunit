@@ -1,13 +1,19 @@
-This project is Framework Development using C# and Nunit
 
 = Introduction =
-
+This project is Framework Development for GUI/WEB applications automation using C# and Nunit.
 
 
 
 = Details =
+This project uses Nunit to drive the automation test execution.
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+It uses Excel speardsheet as source of data to scripts.
+
+Sample project was created and added to source.
+
+
+
+Inprogress: Report plugin development is under progress
+
+Framework code need to be implemented for exception handling.
+
