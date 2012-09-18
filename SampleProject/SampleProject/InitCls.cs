@@ -71,18 +71,18 @@ namespace SampleProject
         //calling methods at Runtime
         public static string CallMethod(string typeName, string methodName, string stringParam)
         {
-            
+          object[] obj = (stringParam!=null) ? stringParam.Split(','):null;
             // Get the Type for the class
             Type calledType = Type.GetType(typeName);
             object instance = Activator.CreateInstance(calledType);
             // Invoke the method itself. The string returned by the method winds up in s.
             // Note that stringParam is passed via the last parameter of InvokeMember,
             // as an array of Objects.
-            String s = (String)calledType.InvokeMember(methodName, BindingFlags.InvokeMethod | BindingFlags.Default,
+            String s = (String)calledType.InvokeMember(methodName, BindingFlags.InvokeMethod | BindingFlags.Public|BindingFlags.Instance,
 
                             null,
                             instance,
-                            stringParam == null ? null : new Object[] { stringParam });
+                            obj);
 
            
             // Return the string that was returned by the called method.
