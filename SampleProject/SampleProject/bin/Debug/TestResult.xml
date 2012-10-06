@@ -1,17 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="A:\VselUnitFramework\Dev\trunk\SampleProject\SampleProject\bin\Debug\SampleProject.dll" total="1" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2012-09-16" time="23:21:08">
+<test-results name="A:\VselUnitFramework\Dev\trunk\SampleProject\SampleProject\bin\Debug\SampleProject.dll" total="2" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2012-10-02" time="23:30:05">
   <environment nunit-version="2.6.1.12217" clr-version="2.0.50727.5456" os-version="Microsoft Windows NT 6.1.7601 Service Pack 1" platform="Win32NT" cwd="A:\NUnit-2.6.1\bin" machine-name="SHIVAJI-PC" user="shivaji" user-domain="shivaji-PC" />
   <culture-info current-culture="en-IN" current-uiculture="en-US" />
-  <test-suite type="Assembly" name="A:\VselUnitFramework\Dev\trunk\SampleProject\SampleProject\bin\Debug\SampleProject.dll" executed="True" result="Success" success="True" time="17.486" asserts="0">
+  <test-suite type="Assembly" name="A:\VselUnitFramework\Dev\trunk\SampleProject\SampleProject\bin\Debug\SampleProject.dll" executed="True" result="Success" success="True" time="168.153" asserts="0">
     <results>
-      <test-suite type="Namespace" name="SeleniumTests" executed="True" result="Success" success="True" time="17.428" asserts="0">
+      <test-suite type="Namespace" name="SeleniumTests" executed="True" result="Success" success="True" time="168.095" asserts="0">
         <results>
-          <test-suite type="TestFixture" name="BuffetCls" executed="True" result="Success" success="True" time="17.424" asserts="0">
+          <test-suite type="TestFixture" name="BuffetCls" executed="True" result="Success" success="True" time="168.090" asserts="0">
             <results>
-              <test-suite type="ParameterizedTest" name="BuffetTable" executed="True" result="Success" success="True" time="17.391" asserts="0">
+              <test-suite type="ParameterizedTest" name="BuffetTable" executed="True" result="Success" success="True" time="168.057" asserts="0">
                 <results>
-                  <test-case name="SeleniumTests.BuffetCls.BuffetTable(&quot;2&quot;)" executed="True" result="Success" success="True" time="17.370" asserts="0" />
+                  <test-case name="SeleniumTests.BuffetCls.TestScript_1" executed="True" result="Success" success="True" time="85.682" asserts="0" />
+                  <test-case name="SeleniumTests.BuffetCls.TestScript_2" executed="True" result="Success" success="True" time="81.822" asserts="0" />
                 </results>
               </test-suite>
             </results>
