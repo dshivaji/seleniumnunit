@@ -1,7 +1,12 @@
 {
                           'testmethod': ['SampleProject.modules', 'samplemodule','string','int' ],
 						  'testmethod2': ['SampleProject.modules', 'samplemodule','int','int' ],
-						  'Loginmethod': ['SampleProject.modules', 'login','int','int' ]
+						  'Loginmethod': ['SampleProject.modules', 'login','string','string' ],
+						  'logout': ['SampleProject.modules', 'login','string','string' ],
+						  'TheEditingUserUnderCustomerTest': ['SampleProject.modules', 'login','string','string' ],
+						  
+						  
+
 						  
                           
 }

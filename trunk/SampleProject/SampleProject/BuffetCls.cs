@@ -11,16 +11,13 @@ using System.Collections.Generic;
 using System.Text;
 using OpenQA.Selenium.Firefox;
 using System.Threading;
-
+using ReportProj;
 
 namespace SeleniumTests
 {
     [TestFixture]
     public class BuffetCls : InitCls
     {
-        
-
-        
                 
         Dictionary<object, object> flow = null;
 
@@ -30,7 +27,6 @@ namespace SeleniumTests
         {  
             Console.WriteLine("set up at start");
             flow = getexceldata;
-
             
         }
 
@@ -41,8 +37,6 @@ namespace SeleniumTests
         public void TeardownTest()
         {
             Console.WriteLine("end up test method");
-            
-            //end of test activities
         
         }
 
@@ -51,7 +45,7 @@ namespace SeleniumTests
         public void  TestSetUp()
         {
             getdriver = new FirefoxDriver();
-            getdriver.Navigate().GoToUrl("http://www.google.co.in/");
+            getdriver.Navigate().GoToUrl("https://cascadeportal.staging.inty.net");
             
             
         }
@@ -60,27 +54,38 @@ namespace SeleniumTests
         public void TestTearDown()
         { 
            getdriver.Close();
+           
         }
 
         //main test method to drive entire automation activities
-
+        [ReportAction("Report")]
         [TestCaseSource("TestData")]
         [Test]
         public void BuffetTable(string testCaseRow)
-        {
+        {                       
             ArrayList list = null;
-               
-            foreach (object key in flow.Keys)
+
+            try
             {
-                if (Convert.ToString(key).Substring(0, Convert.ToString(key).IndexOf(":")) == testCaseRow)
+
+
+                foreach (object key in flow.Keys)
                 {
-                    list = JsonParser(Convert.ToString(key).Substring(Convert.ToString(key).IndexOf(":") + 1));
-                    CallMethod(list[1] + "." + list[2], Convert.ToString(key).Substring(Convert.ToString(key).IndexOf(":") + 1), (Convert.ToString(flow[key]) == null || Convert.ToString(flow[key]) == "") ? null : Convert.ToString(flow[key]));
+                    if (Convert.ToString(key).Substring(0, Convert.ToString(key).IndexOf(":")).Split('}')[1] == testCaseRow)
+                    {
+                        Console.WriteLine(Convert.ToString(flow[key]));
+                        list = JsonParser(Convert.ToString(key).Substring(Convert.ToString(key).IndexOf(":") + 1));
+                        CallMethod(list[1] + "." + list[2], Convert.ToString(key).Substring(Convert.ToString(key).IndexOf(":") + 1), (Convert.ToString(flow[key]) == null || Convert.ToString(flow[key]) == "") ? null : Convert.ToString(flow[key]));
+                    }
+
+
                 }
-                
-
             }
-
+            catch (Exception e)
+            {
+                Reporter.LogMessage("fail","An exception was thrown","",e.Message);
+                
+            }
         }
 
     }

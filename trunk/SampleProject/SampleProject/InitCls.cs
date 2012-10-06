@@ -13,12 +13,16 @@ using System.Collections;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Firefox;
 using System.Threading;
+using ReportProj;
 namespace SampleProject
 
 
 {
     public class InitCls : ExcelCls
     {
+
+         
+
         public static IWebDriver getdriver
         {
             get;
@@ -36,57 +40,57 @@ namespace SampleProject
 
         //Method to read the data from excel and returns hastset object
         
-        public IEnumerable TestData()
+        public IEnumerable TestData
         {
-            
-            Dictionary<object, object> tempflow = new Dictionary<object, object>();
-            HashSet<string> hs = new HashSet<string>();
-            getexceldata = tempflow = openExcel(@"C:\excel\TestSource.xlsx");
-            
-            //before test activities
-            //Thread thread = new Thread(delegate()
-            //{
-            //    getexceldata = tempflow = openExcel(@"C:\excel\TestSource.xlsx");
-            //});
-
-            //thread.Start();
-
-            //while (!thread.IsAlive) ;
-
-            //thread.Join();
-
-            string temp;
-            var enumerator = tempflow.Keys.GetEnumerator();
-
-            while (enumerator.MoveNext())
+            get
             {
-                var pair = enumerator.Current;
-                temp = pair.ToString();
-                hs.Add(temp.Substring(0, temp.IndexOf(":")));
+                bool itemadd = false;
+                Dictionary<object, object> tempflow = new Dictionary<object, object>();
+                HashSet<string> hs = new HashSet<string>();
+                getexceldata = tempflow = openExcel(@"C:\excel\TestSource.xlsx");
+                string temp;
+                var enumerator = tempflow.Keys.GetEnumerator();
+                while (enumerator.MoveNext())
+                {
+                    var pair = enumerator.Current;                
+                    temp = pair.ToString();
+                    string[] rownum = temp.Substring(0, temp.IndexOf(":")).Split('}');
+                    itemadd = hs.Add(rownum[1]);
+                    if (itemadd) yield return new TestCaseData(rownum[1]).SetName(rownum[0]);
+                }
+
+            
             }
-            return hs;
+            
         }
 
 
         //calling methods at Runtime
         public static string CallMethod(string typeName, string methodName, string stringParam)
         {
-          object[] obj = (stringParam!=null) ? stringParam.Split(','):null;
+            String RetVal = null;
+            object[] obj = (stringParam != null) ? stringParam.Split(',') : null;
             // Get the Type for the class
             Type calledType = Type.GetType(typeName);
             object instance = Activator.CreateInstance(calledType);
             // Invoke the method itself. The string returned by the method winds up in s.
             // Note that stringParam is passed via the last parameter of InvokeMember,
             // as an array of Objects.
-            String s = (String)calledType.InvokeMember(methodName, BindingFlags.InvokeMethod | BindingFlags.Public|BindingFlags.Instance,
+            try
+            {
+                RetVal = (String)calledType.InvokeMember(methodName, BindingFlags.InvokeMethod | BindingFlags.Public | BindingFlags.Instance | BindingFlags.Static,
 
                             null,
                             instance,
                             obj);
 
-           
+            }
+            catch (Exception e)
+            {
+                Reporter.LogMessage("fail", "An Exception was thrown CallMethod method", "", e.StackTrace.ToString());
+            }
             // Return the string that was returned by the called method.
-            return s;
+            return RetVal;
         }
 
 
@@ -96,28 +100,37 @@ namespace SampleProject
             string methodname = null;
             bool flag = false;
 
-            list.Clear();
-            JsonTextReader reader = new JsonTextReader(new StringReader(SampleProject.Properties.Resources.Mapping));
 
-            while (reader.Read())
+            try
             {
-                if ((reader.Value != null) && (reader.TokenType.ToString() == "PropertyName"))
+                list.Clear();
+                JsonTextReader reader = new JsonTextReader(new StringReader(SampleProject.Properties.Resources.Mapping));
+
+                while (reader.Read())
                 {
-                    methodname = (string)reader.Value;
-                    if (methodname == strmethod)
-                    flag = true;
-                    
+                    if ((reader.Value != null) && (reader.TokenType.ToString() == "PropertyName"))
+                    {
+                        methodname = (string)reader.Value;
+                        if (methodname == strmethod)
+                            flag = true;
+
+                    }
+                    if (reader.Value != null && flag)
+                    {
+                        list.Add(reader.Value);
+                    }
                 }
-                if (reader.Value != null && flag)
-                {
-                    list.Add(reader.Value);
-                }
+
+
+
+            }
+            catch (Exception e)
+            {
+                Reporter.LogMessage("fail", "An Exception was thrown JsonParser method", "", e.Message);
             }
 
-            return list;
-
-        }
-
+        return list;
+       }
 
 
     }

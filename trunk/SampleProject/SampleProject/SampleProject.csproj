@@ -41,6 +41,9 @@
     <Reference Include="nunit.framework">
       <HintPath>A:\NUnit-2.6.1\bin\nunit.framework.dll</HintPath>
     </Reference>
+    <Reference Include="ReportProj">
+      <HintPath>C:\Users\shivaji\Documents\Visual Studio 2012\Projects\ReportProj\ReportProj\bin\Debug\ReportProj.dll</HintPath>
+    </Reference>
     <Reference Include="Selenium.WebDriverBackedSelenium">
       <HintPath>A:\selenium-dotnet-2.25.1 (2)\net40\Selenium.WebDriverBackedSelenium.dll</HintPath>
     </Reference>
@@ -70,7 +73,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="modules\samplemodule.cs" />
     <Compile Include="InitCls.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -83,6 +85,7 @@
   <ItemGroup>
     <Content Include="Resources\Mapping.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
