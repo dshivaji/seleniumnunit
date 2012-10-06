@@ -45,7 +45,7 @@ namespace SeleniumTests
         public void  TestSetUp()
         {
             getdriver = new FirefoxDriver();
-            getdriver.Navigate().GoToUrl("https://cascadeportal.staging.inty.net");
+            getdriver.Navigate().GoToUrl("");
             
             
         }
