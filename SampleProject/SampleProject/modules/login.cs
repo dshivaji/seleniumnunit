@@ -37,39 +37,7 @@ namespace SampleProject.modules
 
         public static void TheEditingUserUnderCustomerTest()
         {
-            getdriver.FindElement(By.LinkText("Users")).Click();
-            Assert.AreEqual("Users", getdriver.Title);
-            Thread.Sleep(3000);
-            getdriver.FindElement(By.LinkText("edit")).Click();
-            Thread.Sleep(3000);
-            Assert.AreEqual("Edit: administrator1023 User3 > 240812customer1 - intY Cascade Management Portal", getdriver.Title);
-            Thread.Sleep(3000);
-            getdriver.FindElement(By.Id("FirstName")).Clear();
-            Thread.Sleep(3000);
-            getdriver.FindElement(By.Id("FirstName")).SendKeys("administrator1023");
-            Thread.Sleep(3000);
-            getdriver.FindElement(By.Id("LastName")).Clear();
-            Thread.Sleep(3000);
-            getdriver.FindElement(By.Id("LastName")).SendKeys("User3");
-            Thread.Sleep(3000);
-            new SelectElement(getdriver.FindElement(By.Id("SecurityQuestions_UserResponses_0__SecurityQuestionId"))).SelectByText("What is your favourite food?");
-            Thread.Sleep(3000);
-            getdriver.FindElement(By.Id("SecurityQuestions_UserResponses_0__UserResponse")).Clear();
-            Thread.Sleep(3000);
-            getdriver.FindElement(By.Id("SecurityQuestions_UserResponses_0__UserResponse")).SendKeys("biryani");
-            Thread.Sleep(3000);
-            new SelectElement(getdriver.FindElement(By.Id("SecurityQuestions_UserResponses_1__SecurityQuestionId"))).SelectByText("What is your favourite holiday destination?");
-            Thread.Sleep(3000);
-            getdriver.FindElement(By.Id("SecurityQuestions_UserResponses_1__UserResponse")).Clear();
-            Thread.Sleep(3000);
-            getdriver.FindElement(By.Id("SecurityQuestions_UserResponses_1__UserResponse")).SendKeys("paris");
-            Thread.Sleep(3000);
-            getdriver.FindElement(By.XPath("//input[@value='Submit']")).Click();
-            Thread.Sleep(3000);
-            Assert.AreEqual("Users", getdriver.Title);
-            Thread.Sleep(3000);
-            Assert.AreEqual("Update successful", getdriver.FindElement(By.XPath("//div[@id='content']/div")).Text);
-            Thread.Sleep(3000);
+           
         }
 
     }
